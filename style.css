@@ -1,0 +1,83 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+}
+
+.settingsIconContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.settingsIcon {
+    width: 20px;
+    height: 20px;
+    background-color: hotpink;
+}
+
+.lifeTrackerContainer {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33vw, auto));
+    grid-template-rows: 1fr 1fr; */
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    /* border: 2px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.lifeTrackerContainer .player:last-child {
+    grid-column: auto / span;
+}
+
+.playerContainer {
+    position: relative;
+    flex: 1 1 auto;
+    width: clamp(33%, 49%, 100%);
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+}
+
+.playerContainer span {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 50%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.playerContainer .topButton {
+    top: 0;
+    background-color: black;
+}
+
+.playerContainer .bottomButton {
+    top: 50%;
+    background-color: red;
+}
+
+/* .playerContainer::after {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 50%;
+    
+    z-index: 10;
+    opacity: .5;
+} */
