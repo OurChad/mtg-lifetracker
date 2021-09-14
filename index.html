@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="css/mana.min.css" rel="stylesheet" type="text/css" />
     
     <title>MTG Life Tracker</title>
 </head>
 <body>
     <main>
         <div class="settingsIconContainer">
-            <div class="settingsIcon"></div>
+            <span id="settingsIcon"><i class="ms ms-p"></i></span>
         </div>
-        <div class="lifeTrackerContainer">
+        <div class="settingsContainer">
+            <div class="settingsContainerMenu">
+                <div class="closeSettings">
+                    <span id="closeSettingsIcon"><i class="ms ms-untap"></i></span>
+                </div>
+                <div class="options"></div>
+            </div>
         </div>
+        <div class="lifeTrackerContainer"></div>
     </main>
     <script type="text/javascript" src="main.js"></script>
 </body>
